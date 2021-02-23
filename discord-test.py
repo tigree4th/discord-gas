@@ -2,6 +2,9 @@ import discord
 import random
 client = discord.Client()
 
+CHANNEL_ID = 813717329296228393
+ACCESS_TOKEN = ""
+
 random_contents = [
     "にゃーん",
     "わん！",
@@ -12,21 +15,22 @@ random_contents = [
 
 @client.event
 async def on_ready():
+    # Test Code
     print("on_ready")
     print(discord.__version__)
 
 @client.event
 async def on_message(message):
-    # 送信者がbotである場合は弾く
+    # Reject BOT
     if message.author.bot:
         return 
-    # メッセージの本文が 鳴いて だった場合
+
     if message.content == "鳴いて":
-        # 送信するメッセージをランダムで決める
         content = random.choice(random_contents)
-        # メッセージが送られてきたチャンネルに送る
+        message.channel = client.get_channel(CHANNEL_ID)
         await message.channel.send(content)
     elif message.content == "おはよう":
+        message.channel = client.get_channel(CHANNEL_ID)
         await message.channel.send("おはよう！！")
 
-client.run("")
+client.run(ACCESS_TOKEN)
