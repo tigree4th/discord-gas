@@ -1,9 +1,10 @@
 import discord
 import random
+import settings
 client = discord.Client()
 
-CHANNEL_ID = 813717329296228393
-ACCESS_TOKEN = ""
+CHANNEL_ID = settings.CHANNEL_ID
+ACCESS_TOKEN = settings.ACCESS_TOKEN
 
 random_contents = [
     "にゃーん",
@@ -23,7 +24,7 @@ async def on_ready():
 async def on_message(message):
     # Reject BOT
     if message.author.bot:
-        return 
+        return
 
     if message.content == "鳴いて":
         content = random.choice(random_contents)
