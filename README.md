@@ -24,7 +24,7 @@ discord-gas は開発中のリポジトリです。
 ## 動作条件
 
 - Python 3.7 以上の環境
-- discord.py
+- [discord.py](https://github.com/Rapptz/discord.py)
 
 ### discord.py のインストールについて
 
