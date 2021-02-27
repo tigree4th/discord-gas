@@ -9,6 +9,7 @@
 [Ss]cripts
 pyvenv.cfg
 .venv
+.env
 pip-selfcheck.json
 
 .vscode/settings.json

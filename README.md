@@ -23,22 +23,8 @@ discord-gas は開発中のリポジトリです。
 
 ## 動作条件
 
-- Python 3.7 以上の環境
-- discord.py
-
-### discord.py のインストールについて
-
-#### Windows 以外の環境
-
-```shell
-$ python3 -m pip install -U "discord.py[voice]"
-```
-
-#### Windows 環境
-
-```shell
-$ py -3 -m pip install -U discord.py[voice]
-```
+- Python 3.7 以上
+- venv
 
 <br/>
 
@@ -58,8 +44,12 @@ $ py -3 -m pip install -U discord.py[voice]
 
 ## 使い方
 
-`ACCESS_TOKEN = ""` には discordAPP のアクセストークンを入れる必要があります。
-この部分は将来的に環境変数で設定可能にする予定です。
+`discord-test.py`と同じ階層に下記のような環境変数設定用ファイル`.env`を作ってください。`DISCORD_ACCESS_TOKEN=`の後に DiscordAPP 用のアクセストークン、`DISCORD_CHANNEL_ID=`の後にターゲットとなるチャンネル ID を入力してください。
+
+```env
+DISCORD_ACCESS_TOKEN=
+DISCORD_CHANNEL_ID=
+```
 
 <br/>
 
