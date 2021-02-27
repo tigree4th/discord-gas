@@ -23,22 +23,8 @@ discord-gas は開発中のリポジトリです。
 
 ## 動作条件
 
-- Python 3.7 以上の環境
-- [discord.py](https://github.com/Rapptz/discord.py)
-
-### discord.py のインストールについて
-
-#### Windows 以外の環境
-
-```shell
-$ python3 -m pip install -U "discord.py[voice]"
-```
-
-#### Windows 環境
-
-```shell
-$ py -3 -m pip install -U discord.py[voice]
-```
+- Python 3.7 以上
+- venv
 
 <br/>
 
