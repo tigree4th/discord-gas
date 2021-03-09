@@ -1,11 +1,3 @@
----
-name: Feature request (日本語)
-about: 新機能のリクエスト
-title: ""
-labels: enhancement
-assignees: ""
----
-
 **この機能はどういった問題に関連しているか。**
 問題を明確かつ簡潔に説明すること。
 例：私はいつも～の時に 私はいつも～でイライラしています。
