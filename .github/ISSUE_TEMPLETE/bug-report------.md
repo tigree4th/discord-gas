@@ -1,3 +1,11 @@
+---
+name: Bug report (日本語)
+about: 改善のためのバグレポートです
+title: Bug report
+labels: bug
+assignees: ""
+---
+
 **【現象の詳細】**
 (現象詳細を記載)
 
